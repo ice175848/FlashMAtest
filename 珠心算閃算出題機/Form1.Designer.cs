@@ -193,7 +193,7 @@ namespace 珠心算閃算出題機
             this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown1.TabIndex = 1000;
             this.numericUpDown1.Value = new decimal(new int[] {
-            100,
+            500,
             0,
             0,
             0});
@@ -210,7 +210,7 @@ namespace 珠心算閃算出題機
             this.numericUpDown2.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown2.TabIndex = 11;
             this.numericUpDown2.Value = new decimal(new int[] {
-            5,
+            3,
             0,
             0,
             0});
@@ -232,7 +232,7 @@ namespace 珠心算閃算出題機
             this.numericUpDown3.Size = new System.Drawing.Size(114, 22);
             this.numericUpDown3.TabIndex = 12;
             this.numericUpDown3.Value = new decimal(new int[] {
-            2,
+            3,
             0,
             0,
             0});
@@ -241,7 +241,7 @@ namespace 珠心算閃算出題機
             // 
             this.button2.Location = new System.Drawing.Point(681, 45);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(82, 23);
             this.button2.TabIndex = 1001;
             this.button2.Text = "Answer";
             this.button2.UseVisualStyleBackColor = true;
@@ -260,19 +260,19 @@ namespace 珠心算閃算出題機
             // 
             this.button3.Location = new System.Drawing.Point(681, 72);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(120, 23);
             this.button3.TabIndex = 1003;
-            this.button3.Text = "顯示題目";
+            this.button3.Text = "顯示/遮蔽題目";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(762, 72);
+            this.button4.Location = new System.Drawing.Point(681, 101);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(118, 23);
+            this.button4.Size = new System.Drawing.Size(120, 23);
             this.button4.TabIndex = 1004;
-            this.button4.Text = "再來一次(尚未開放)";
+            this.button4.Text = "再來一次(加減)";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 

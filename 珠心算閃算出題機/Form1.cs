@@ -223,16 +223,29 @@ namespace 珠心算閃算出題機
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(radioButton1.Checked == true)
+            {
+                numericUpDown1.Enabled = true;
+                button4.Enabled = true;
+            }
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (radioButton2.Checked == true)
+            {
+                numericUpDown1.Enabled = true;
+                button4.Enabled = true;
+            }
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
+            if (radioButton3.Checked == true)
+            {
+                numericUpDown1.Enabled = true;
+                button4.Enabled = true;
+            }
 
         }
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
@@ -240,6 +253,7 @@ namespace 珠心算閃算出題機
             if (radioButton4.Checked == true)
             {
                 numericUpDown1.Enabled = false;
+                button4.Enabled = false;
             }
         }
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
@@ -247,15 +261,47 @@ namespace 珠心算閃算出題機
             if (radioButton5.Checked == true)
             {
                 numericUpDown1.Enabled = false;
+                button4.Enabled = false;
             }
-
         }
-
+        bool question_isHide=false;//
+        string question_save;
         private void button3_Click(object sender, EventArgs e)
         {
-            label5.Text = null;
-            for (int i = 0; i < times; i++)
-                label5.Text += "\n"+memory[i];
+            //question_isHide = false;
+            if (radioButton4.Checked == true || radioButton5.Checked == true)
+            {
+                if (question_isHide)
+                {
+                    label4.Text = question_save;
+                    question_save = null;
+                    question_isHide = !question_isHide;
+                }
+                else
+                {
+                    question_save = label4.Text;
+                    label4.Text = "";
+                    question_isHide = !question_isHide;
+                }
+            }
+            else
+            {
+                if(question_isHide)
+                {
+                    label5.Text = null;
+                    for (int i = 0; i < times; i++)
+                    {
+                        label5.Text += "\n" + memory[i];
+                    }
+                    question_isHide = !question_isHide;
+                }
+                else
+                {
+                    question_save = label5.Text;
+                    label5.Text = "";
+                    question_isHide = !question_isHide;
+                }
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
