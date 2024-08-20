@@ -1,9 +1,3 @@
-The repository **FlashMAtest** is designed to assist players in mental arithmetic, specifically for creating flash-based abacus exercises. The project is implemented in C# and contains source code files and a solution for generating arithmetic problems that can help users practice and improve their mental calculation skills. 
-
-Here is a draft of a README file in both Traditional Chinese and English:
-
----
-
 # FlashMAtest
 
 ## 簡介
